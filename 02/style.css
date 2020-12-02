@@ -1,0 +1,10 @@
+#drop_zone {
+	border: 5px solid lightgrey;
+	border-radius: 5px;
+	width:  200px;
+	height: 100px;
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center
+}

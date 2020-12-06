@@ -65,9 +65,8 @@ function processData(data) {
         if(count >= line.firstPos && count <= line.secondPos){
             validFirstPart++;
         }
-        let array = line.pwd.split('');
-        if( array[line.firstPos-1] === line.letter && array[line.secondPos-1] !== line.letter ||
-            array[line.firstPos-1] !== line.letter && array[line.secondPos-1] === line.letter){
+        if( line.pwd[line.firstPos-1] === line.letter && line.pwd[line.secondPos-1] !== line.letter ||
+            line.pwd[line.firstPos-1] !== line.letter && line.pwd[line.secondPos-1] === line.letter){
             validSecondPart++;
         }
     }
